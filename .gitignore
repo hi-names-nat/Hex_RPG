@@ -1,0 +1,5 @@
+godot-cpp
+cmake-build-debug
+.idea/
+.vscode/
+.sconsign.dblite

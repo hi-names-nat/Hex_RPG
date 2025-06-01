@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://xfnnms7gevhb"]
+
+[ext_resource type="Script" uid="uid://bu1f6qfc5xqsp" path="res://addons/h_rpg_core/actors/rpg_character.gd" id="1_qlmln"]
+[ext_resource type="Texture2D" uid="uid://baeavieda6cdd" path="res://addons/h_rpg_core/actors/me_rpg.png" id="1_x58bf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1qwc7"]
+size = Vector2(14, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ygut4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_x58bf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="RpgCharacter" type="CharacterBody2D"]
+script = ExtResource("1_qlmln")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1qwc7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -3)
+sprite_frames = SubResource("SpriteFrames_ygut4")

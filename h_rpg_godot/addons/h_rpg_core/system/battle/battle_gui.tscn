@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0l47fn4hsdsg"]
+
+[ext_resource type="Texture2D" uid="uid://waiif3d35os2" path="res://text_box.png" id="1_3lnmn"]
+
+[node name="BattleGui" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dialogue_Box" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 82.0
+offset_top = 218.0
+offset_right = 505.0
+offset_bottom = 323.0
+texture = ExtResource("1_3lnmn")
+
+[node name="Label" type="Label" parent="Dialogue_Box"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 14.0
+offset_right = 409.0
+offset_bottom = 91.0
+autowrap_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 269.0
+offset_right = 566.0
+offset_bottom = 314.0
+columns = 4
+
+[node name="Button" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button2" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button3" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button4" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
